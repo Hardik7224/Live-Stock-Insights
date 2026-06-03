@@ -24,6 +24,29 @@ The system automatically extracts real-time and historical stock market data, pe
 
 ---
 
+## 🛠️ Tech Stack & Architecture
+
+```mermaid
+graph TD
+    A[yfinance API] -->|Python Extraction| B[scripts/data_collection.py]
+    B -->|Raw CSVs| C[data/raw/]
+    C -->|Pandas Transformation| D[scripts/data_preprocessing.py]
+    D -->|Cleaned CSV & Technical Features| E[data/processed/]
+    E -->|SQLAlchemy| F[(SQL Database - SQLite/PostgreSQL)]
+    F -->|Advanced SQL Queries / CTEs| G[sql/queries.sql]
+    E -->|Feature Engineering| H[scripts/ml_pipeline.py]
+    H -->|Train ML Models| I[models/saved_models/]
+    F & I -->|Streamlit App| J[app.py - Live Analytics & Forecasting UI]
+    F -->|Data Connector| K[dashboard/Power BI Dashboard Design]
+```
+
+*   **Language**: Python (Pandas, NumPy, Scikit-learn, SQLAlchemy, Joblib, Streamlit, Plotly, Matplotlib, Seaborn)
+*   **Database**: SQLite (Local Dev - Zero Setup) / Fully compatible with MySQL & PostgreSQL (Production)
+*   **BI Visualizer**: Power BI (Relational Star Schema Model, Widescreen 16:9 Dark Mode, Custom DAX Calculations)
+*   **APIs**: `yfinance` (Intraday & Historical Data Extraction)
+
+---
+
 ## ✨ Key Features
 
 ### 📊 Real-Time Market Analytics
