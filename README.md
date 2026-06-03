@@ -24,20 +24,6 @@ The system automatically extracts real-time and historical stock market data, pe
 
 ---
 
-## 📸 Dashboard Preview
-
-> Add screenshots or GIFs of your dashboard here
-
-```markdown
-![Dashboard](images/dashboard.png)
-
-![Forecasting](images/forecasting.png)
-
-![Portfolio Analysis](images/portfolio.png)
-```
-
----
-
 ## ✨ Key Features
 
 ### 📊 Real-Time Market Analytics
