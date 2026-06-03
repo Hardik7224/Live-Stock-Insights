@@ -247,8 +247,8 @@ The project includes advanced SQL queries demonstrating:
 ### Clone Repository
 
 ```bash
-git clone https://github.com/Hardik7224/Quantum.git
-cd Quantum
+git clone https://github.com/Hardik7224/Quantum-Stock-Analytics.git
+cd Quantum-Stock-Analytics
 ```
 
 ### Install Dependencies
@@ -336,11 +336,3 @@ http://localhost:8501
 * Automated Trading Signal Generation
 
 ---
-
-<div align="center">
-
-### ⭐ If you found this project useful, consider giving it a star!
-
-**Built to demonstrate Data Engineering, Quantitative Finance, SQL, Machine Learning, and Business Intelligence skills in a single end-to-end project.**
-
-</div>
